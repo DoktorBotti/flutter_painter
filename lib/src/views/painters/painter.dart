@@ -43,7 +43,7 @@ class Painter extends CustomPainter {
           .storage);
     }
 
-    canvas.saveLayer(Rect.largest, Paint());
+    canvas.saveLayer(Offset.zero & size, Paint());
 
     // Draw all the drawables
     for (final drawable
